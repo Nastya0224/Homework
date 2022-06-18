@@ -1,45 +1,60 @@
 # #Задача 14.1
 # class Dog:
-#     height = 20
-#     weight = 15
-#     name = "Sharik"
-#     age = 2
 #
-#     def __init__(self, jump, run, bark):
-#         self.jump = jump
-#         self.run = run
-#         self.bark = bark
+#     def __init__(self, height, weight, name, age):
+#         self.height = height
+#         self.weight = weight
+#         self.name = name
+#         self.age = age
 #
+#     def jump(self, height):
+#         print(height)
+#
+#     def run(self, speed):
+#         print(speed)
+#
+#     def bark(self, voice):
+#         print(voice)
+#
+# dog = Dog(20, 15, "Sharik", 2)
+# print(dog.__dict__)
 # if __name__ == '__main__':
-#     dog = Dog("jump", "run", "waf-waf")
-#     print(dog.__dict__)
-#     print(dog.height, dog.weight, dog.name, dog.age)
+#     jump = 10
+#     run = 30
+#     bark = "Waf-Waf"
+#
+# print(jump, run, bark)
+
 
 #Задача 14.2
 class Dog:
-    height = 20
-    weight = 15
-    name = "Sharik"
-    age = 2
 
-    def __init__(self, jump, run, bark, change_name):
-        self.jump = jump
-        self.run = run
-        self.bark = bark
-        self.change_name = change_name
+    def __init__(self, height, weight, name, age):
+        self.height = height
+        self.weight = weight
+        self.name = name
+        self.age = age
 
+    def jump(self, height):
+        print(height)
+
+    def run(self, speed):
+        print(speed)
+
+    def bark(self, voice):
+        print(voice)
 
     def dogs(self, down):
-        self.down = down
+        print(down)
 
+    def change_name(self, name1):
+        dog.name = name1
+
+dog = Dog(20, 15, "Sharik", 2)
+print(dog.__dict__)
+print(dog.name)
 
 if __name__ == '__main__':
-    dog = "down"
-    print(dog)
+   dog.change_name(input())
 
-
-dog = Dog("jump", "run", "waf-waf", input())
-dog.name = ""
-del dog.name
-print(dog.__dict__)
-print(dog.height, dog.weight, dog.age)
+print(dog.name)
